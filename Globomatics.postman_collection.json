@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "0e103a60-1e4b-4f9b-8c9d-df73b94de0e6",
+		"name": "Globomatics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all bikes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all bikes - Angular proxy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4200/server/api/v1/bikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4200",
+					"path": [
+						"server",
+						"api",
+						"v1",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get bikes by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bikes/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bikes",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post bike",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John Doe\",\n    \"email\": \"jdoe@test.com\",\n    \"model\": \"29 MTB Trail Racer\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/bikes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bikes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
