@@ -8,10 +8,10 @@ cat ./doh.txt
 
 # Colors
 # See: https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
-GREEN='\033[0;32m'
-BLUE='\033[0;34m'
-YELLOW='\033[1;33m'
-NC='\033[0m' # no color
+GREEN="\033[0;32m"
+BLUE="\033[0;34m"
+YELLOW="\033[1;33m"
+NC="\033[0m" # no color
 
 # LOG_ERROR=../log_error.txt
 
@@ -60,7 +60,7 @@ export -f start_angular
 export -f start_spring
 export -f open_browser
 
-echo -e "[${GREEN}HELLO${NC}] $USERNAME, today is: `date` - Happy coding!"
+echo -e "Hello $USERNAME, today is: `date` - Happy coding!\n\n"
 
 # Open new terminal for each process
 # See: https://stackoverflow.com/questions/23002132/running-a-bash-function-in-gnome-terminal-x
