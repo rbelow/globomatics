@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-}
+};
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,7 @@ export class BikeService {
     return this.http.get(
       '/server/api/v1/bikes',
       {
-        headers: new HttpHeaders().set('Authorisation', 'Bearer' + token)
+        headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)
       }
     );
   }
@@ -29,7 +29,7 @@ export class BikeService {
     return this.http.get(
       '/server/api/v1/bikes/' + id,
       {
-        headers: new HttpHeaders().set('Authorisation', 'Bearer' + token)
+        headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)
       }
     );
   }
