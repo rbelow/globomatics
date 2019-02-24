@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 import { CallbackComponent } from './components/callback/callback.component';
 import { AuthService } from './services/auth.service';
+import { AuthGuard } from './services/auth.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AuthService } from './services/auth.service';
   ],
   providers: [
     BikeService,
-    AuthService
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
